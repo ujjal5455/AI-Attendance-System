@@ -1,32 +1,76 @@
-# AI-Based Smart Attendance System 🎓
+# 🎓 AI-Based Smart Attendance System Using Face Recognition
 
-An AI-powered attendance system using Face Recognition built with Flask, OpenCV, and Python.
-
----
-
-## 🚀 Features
-
-- Face Recognition Attendance
-- Admin Dashboard
-- Attendance Reports (Daily & Monthly)
-- Attendance Percentage Calculation
-- Excel Export
-- Unknown Face Detection
-- Reset System
+An intelligent attendance system that uses **Face Recognition** to automatically mark attendance in real-time using a webcam.
 
 ---
 
-## 🛠️ Technologies Used
+## 🚀 Overview
 
-- Python (Flask)
-- OpenCV
-- face_recognition
-- SQLite
-- HTML, CSS, JavaScript
+This project eliminates manual attendance by using **AI-based facial recognition**.  
+It detects faces, compares them with stored data, and records attendance instantly.
 
 ---
 
-## 📦 Installation
+## ✨ Key Features
+
+- ✅ Face Recognition Attendance (Real-time)
+- ✅ Admin Login System
+- ✅ Add & Manage Students
+- ✅ Automatic Attendance Marking
+- ✅ Prevent Duplicate Entries
+- ✅ Attendance Percentage Calculation
+- ✅ Monthly Attendance Reports
+- ✅ Excel Export
+- ✅ Dashboard with Graphs
+- ✅ Unknown Face Detection
+- ✅ Reset System
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology |
+|------------|-----------|
+| Frontend   | HTML, CSS, JavaScript |
+| Backend    | Python (Flask) |
+| AI         | OpenCV, face_recognition |
+| Database   | SQLite |
+| Tools      | VS Code, Webcam |
+
+---
+
+## 🧠 How It Works
+
+1. Admin registers a student  
+2. System captures face images  
+3. Images are converted into face encodings  
+4. During attendance:
+   - Webcam detects faces  
+   - Encodings are compared  
+   - If matched → attendance marked  
+
+---
+
+📸 Screenshots
+
+ 🏠 Dashboard
+![Dashboard](screenshots/dashboard.png)
+
+ ➕ Add Student
+![Add Student](screenshots/add_student.png)
+
+ 👥 Students List
+![Students](screenshots/students.png)
+
+ 📋 Admin Login
+![Admin](screenshots/admin_login.png)
+
+ 📅 Monthly Report
+![Monthly Report](screenshots/monthly_report.png)
+
+---
+
+## ⚙️ Installation
 
 ```bash
 git clone https://github.com/yourusername/AI-Attendance-System.git
