@@ -77,3 +77,26 @@ git clone https://github.com/yourusername/AI-Attendance-System.git
 cd AI-Attendance-System
 pip install -r requirements.txt
 python app.py
+
+▶️ Usage
+Login as admin
+Add student
+Capture face
+Start attendance
+View reports
+
+⚠️ Limitations
+Requires webcam
+Lighting conditions affect accuracy
+Runs locally (camera access needed)
+
+🔮 Future Improvements
+Cloud deployment
+Mobile application
+Multi-camera support
+Face mask detection
+ERP integration
+
+👨‍💻 Author
+Ujjwal Ray
+BCA 6th Semester
