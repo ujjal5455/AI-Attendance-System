@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Attendance Percentage</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Present</th>
+            <th>Total</th>
+            <th>Percentage</th>
+        </tr>
+
+        {% for s in data %}
+        <tr>
+            <td>{{ s.name }}</td>
+            <td>{{ s.present_days }}</td>
+            <td>{{ s.total_days }}</td>
+            <td>{{ s.percentage }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

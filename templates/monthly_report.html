@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Monthly Report</h2>
+
+    <form method="POST">
+        <input type="month" name="month" required>
+        <button type="submit">Generate</button>
+    </form>
+
+    {% if report %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Present Days</th>
+            <th>Total Days</th>
+            <th>Percentage</th>
+        </tr>
+
+        {% for r in report %}
+        <tr>
+            <td>{{ r.name }}</td>
+            <td>{{ r.present_days }}</td>
+            <td>{{ r.total_days }}</td>
+            <td>{{ r.percentage }}%</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Attendance System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>AI System</h2>
+    <a href="/">Home</a>
+    <a href="/add_student">Add Student</a>
+    <a href="/recognize">Start Attendance</a>
+    <a href="/students">Students</a>
+    <a href="/attendance">Attendance</a>
+    <a href="/attendance_percentage">Percentage</a>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/export_excel">Export Excel</a>
+    <a href="/monthly_report">Monthly Report</a>
+    <a href="/reset_system" onclick="return confirm('Reset everything?')" style="color:red;">Reset</a>
+    <a href="/logout">Logout</a>
+</div>
+
+<div class="main">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

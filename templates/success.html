@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card" style="text-align:center;">
+
+    <h2>✔ Success</h2>
+
+    <p style="margin-top:20px; font-size:16px;">
+        {{ message }}
+    </p>
+
+    <div style="margin-top:30px;">
+        <a href="/" style="
+            padding:10px 20px;
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            display:inline-block;
+        ">
+            ← Go Back to Dashboard
+        </a>
+    </div>
+
+</div>
+{% endblock %}
